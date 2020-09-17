@@ -1,0 +1,26 @@
+app-btn{
+  display: flex;
+}
+.d-btn{
+  display: flex;
+  width: 100px;
+  text-align: center;
+  flex-direction: column;
+}
+.d-btn>a{
+  background-color: white;
+  padding: 5px 20px;
+  color: #444;
+  font-size: 14px;
+  font-family: "2  Koodak";
+  border-radius: 2px;
+  text-decoration: none;
+  box-shadow: 0 0 1px darkgray;
+}
+.d-btn:hover>a{
+  background-color: #3f3f3f;
+  color: #ffffff;
+}
+.d-btn>a>i{
+  margin-left: 5px;
+}

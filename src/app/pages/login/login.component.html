@@ -1,0 +1,67 @@
+<section class="login-wrapper mx-auto ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="login">
+          <mat-grid-list cols="2" rowHeight="2:2">
+            <mat-grid-tile class="bo-login">
+              <div class="welcome">
+                <div class="welcome-img">
+                  <img src="https://www.zamen.co/wp-content/uploads/2020/04/app-icon-2.png" alt="">
+                </div>
+                <div class="welcome-message">
+                  <div class="message-txt">
+                    <span>خوش آمدید</span>
+                  </div>
+                </div>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile class="s">
+              <form action="" #f="ngForm" name="myForm" id="login-form" >
+                <div class="form-group custom-form-group">
+                  <input type="text"
+                         class="form-control"
+                         id="userName"
+                         aria-describedby="emailHelp"
+                         name="userName"
+                         ngModel
+                         #userName="ngModel"
+                         minlength="3"
+                         required="required"
+                         pattern="^(?![_.])(?![0-9])(?!.*[_.]{2})[a-zA-Z0-9_]+(?<![_.])$"
+                         placeholder="نام کاربری">
+                  <div class="alert alert-danger mt-1" *ngIf="!userName.valid && userName.touched">
+                    <p *ngIf="userName.hasError('required')" class="m-0 text-right">نام کاربری وارد شده اشتباه است.</p>
+                    <p *ngIf="userName.hasError('minlength')" class="m-0 text-right">نام کاربری حداقل باید ۳ کاراکتر داشته باشد.</p>
+                    <p *ngIf="userName.hasError('pattern')" class="m-0 text-right">نام کاربری نمی تواند شامل کارکتر های خاص (+ - * & $ # !) باشد </p>
+                    <p *ngIf="userName.hasError('pattern')" class="m-0 text-right">نام کاربری نمی تواند با عدد شروع شود </p>
+                  </div>
+                </div>
+                <div class="form-group custom-form-group">
+                  <input type="password"
+                         class="form-control"
+                         id="password"
+                         required
+                         ngModel
+                         name="password"
+                         #password="ngModel"
+                         placeholder="رمز عبور">
+                </div>
+                <div class="form-check form-check-custom ">
+                  <label class="form-check-label" for="checkbox">مرا به یاد داشته باش</label>
+                  <input type="checkbox"
+                         class="form-check-input"
+                         required="required"
+                         ngModel
+                         #checkBox="ngModel"
+                         id="checkbox">
+                </div>
+                <button type="submit" class="btn btn-primary form-btn"  [disabled]="!f.valid">ورود</button>
+              </form>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

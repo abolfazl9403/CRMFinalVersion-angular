@@ -1,0 +1,44 @@
+
+.content-title{
+  font-size: 34px;
+}
+.content-item-group {
+  text-align: right;
+  padding: 10px;
+  min-height: 100vh;
+  background-color: #4e73df;
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.content-item-group > a, .content-list-item > a {
+  text-decoration: none;
+  font-family: "2  Koodak";
+  color: white;
+}
+
+.content-list-item > a > i {
+  font-size: 1.25rem;
+  padding: 12px 10px;
+}
+
+.subHeader {
+  padding-right: 10px;
+  font-family: "2  Koodak";
+}
+
+.subHeader > p {
+  font-size: 0.85rem;
+  margin: 0;
+  font-weight: 600;
+  font-family: "2  Koodak";
+  padding: 0;
+}
+
+.content {
+  padding: 10px;
+}

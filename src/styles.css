@@ -1,0 +1,105 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font: unset;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #e4e3e3;
+}
+
+app-admindashboard {
+  width: 100%;
+}
+/********** transaction**********/
+app-transaction-list{
+  display: flex;
+  flex-direction: column;
+}
+/*****************************table*************/
+.mat-paginator-container {
+  direction: ltr !important;
+  justify-content: flex-start;
+}
+
+.mat-sort-header-container {
+  justify-content: end;
+}
+
+th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+  padding-left: 0 !important;
+  padding-right: 25px !important;
+  text-align: right;
+}
+
+th.mat-header-cell:last-of-type, td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type {
+  padding-left: 25px !important;
+  padding-right: 0 !important;
+  text-align: right;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  text-align: right;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  height: 0 !important;
+}
+
+.mat-form-field-infix {
+  border: 1px solid #b3bead;
+  border-radius: 2px;
+  padding: 10px 0;
+}
+
+input.mat-input-element {
+  padding-right: 10px;
+}
+
+.mat-form-field-empty.mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  padding-right: 10px;
+}
+/************option**********/
+.mat-form-field-appearance-fill .mat-form-field-infix{
+  text-align: right !important;
+}
+.mat-form-field-type-mat-select .mat-form-field-label {
+}
+
+.mat-form-field-type-mat-select .mat-form-field-label {
+  width: calc(100% - -3px)!important;
+  padding-top: 6px;
+  font-size: 17px;
+}
+.mat-option-text{
+  text-align: initial!important;
+  padding-right: 10px;
+}
+mat-label{
+  padding-top: 15px;
+}
+mat-select-trigger{
+  padding-right: 10px;
+}
+.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{
+  display: none !important;
+}
+.mat-select-arrow-wrapper{
+  display: unset !important;
+}
+/***************sidebar*********/
+@media (min-width: 768px) {
+  .content-item-group {
+    width: 14rem;
+  }
+}

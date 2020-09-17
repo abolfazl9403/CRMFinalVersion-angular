@@ -1,0 +1,31 @@
+<div class="checkboxs">
+  <section title="{{cB.name}}" *ngFor="let cB of checkboxes" [attr.id]="cB" >
+    <div class="roundedTwo">
+      <span>{{cB.name}}</span>
+      <input type="checkbox" value="None" id="roundedTwo" name="check" (input)="onToggle($event)" />
+      <label for="roundedTwo"></label>
+    </div>
+  </section>
+  <!--<section title="کاربران بن شده">
+    <div class="roundedTwo">
+      <span>کاربران بن شده</span>
+      <input type="checkbox" value="None" id="roundedTwo_" name="check_" (input)="onToggle($event)"/>
+      <label for="roundedTwo_"></label>
+    </div>
+  </section>
+  <section title="آخرین کاربران ثبت‌نامی">
+    <div class="roundedTwo">
+      <span>آخرین کاربران ثبت‌نامی</span>
+      <input type="checkbox" value="None" id="roundedTwo__" name="check__" (input)="onToggle($event)"/>
+      <label for="roundedTwo__"></label>
+    </div>
+  </section>-->
+  <!--<section title="آخرین تراکنش">
+    <div class="roundedTwo">
+      <span>آخرین تراکنش</span>
+      <input type="checkbox" value="None" id="roundedTwo___" name="check___" checked />
+
+      <label for="roundedTwo___"></label>
+    </div>
+  </section>-->
+</div>

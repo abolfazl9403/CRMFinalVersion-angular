@@ -1,0 +1,6 @@
+app-select-option{
+  justify-content: flex-end;
+  display: flex;
+  direction: ltr;
+  width: 230px;
+}

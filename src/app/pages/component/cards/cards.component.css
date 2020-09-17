@@ -1,0 +1,54 @@
+.border-right-blue {
+  border-right: .25rem solid #4e73df !important;
+}
+.border-right-green {
+  border-right: .25rem solid #28df99 !important;
+}
+.border-right-red {
+  border-right: .25rem solid #ec0101 !important;
+}
+.border-right-yellow{
+  border-right: .25rem solid #fddb3a !important;
+}
+.border-top-blue{
+  border-top: .25rem solid #4e73df !important;;
+}
+.card{
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+.card > .card-body {
+  display: flex;
+  align-items: center;
+}
+
+.card-context {
+  text-align: right;
+}
+.little-context>span{
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "2  Koodak";
+}
+.main-context>span{
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "2  Koodak";
+}
+.main-context>span>span{
+  font-family: sans-serif;
+  padding-left: 5px;
+}
+.card-icon {
+  color: gray;
+}
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f1f3f8;
+  align-items: center;
+}
+.card-title>a{
+  color: #000;
+  text-decoration: none;
+}

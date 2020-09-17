@@ -1,0 +1,82 @@
+<div class="main-content">
+  <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-envelope"><span
+              class="badge badge-danger ml-2">9</span></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-cog"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                 aria-labelledby="navbarDropdownMenuLink-333">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="report-wrapper">
+        <h3 class="section-title">داشبرد</h3>
+        <a href="" class="btn report-btn"><i class="fa fa-download"></i> دانلود اطلاعات </a>
+      </div>
+      <div class="row">
+          <div class="col-12">
+            <div class="main-table">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+      </div>
+      <!-- <div class="row">
+         <div class="col-xl-8 col-lg-7">
+           <div class="card mt-4 border-top-blue">
+             <div class="card-title">
+               <h6>خلاصه درآمد</h6>
+               <a href=""><i class="fa fa-info"></i></a>
+             </div>
+             <div class="card-body">
+               <canvas id="myChart" width="400" height="200"></canvas>
+             </div>
+           </div>
+         </div>
+         <div class="col-xl-4 col-lg-5">
+           <div class="card mt-4 border-top-blue">
+             <div class="card-title">
+               <h6>خلاصه درآمد</h6>
+               <a href=""><i class="fa fa-info"></i></a>
+             </div>
+             <div class="card-body">
+               <canvas id="myPieChart" width="400" height="400"></canvas>
+             </div>
+           </div>
+         </div>
+       </div>-->
+    </div>
+  </div>
+</div>
